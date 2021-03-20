@@ -1,12 +1,9 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS, cross_origin
 import torch
-import time
 import numpy as np
 from torchvision.transforms import transforms
 from main import Net
 app = Flask(__name__)
-cors = CORS(app)
 PATH = "../MNIST-model/mnist_cnn.pt"
 
 model = Net().double()
