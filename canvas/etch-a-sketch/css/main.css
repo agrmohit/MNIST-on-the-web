@@ -1,0 +1,107 @@
+body {
+  background-image: linear-gradient(315deg, #ffbd92 0%, #ffa39c 74%);
+}
+
+h1 {
+  color: #000;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 1px 1px 10px #fff;
+}
+
+h2 {
+  color: #000;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.btn-set {
+  margin-top: 0%;
+  display: block;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.page {
+  margin: 0;
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  height: 400px;
+  width: 400px;
+  margin: 2% auto;
+  border: 5px solid;
+  box-shadow: 3px 3px 30px black;
+}
+
+.btn {
+  cursor: pointer;
+  color: rgb(64, 64, 64);
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: #ffb4ad;
+  color: black;
+  box-shadow: 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+.grid-item {
+  transition: background-color 1s ease;
+  background-color: rgba(255, 255, 255, 1);
+  border: 0.05rem solid rgb(243, 240, 240);
+  justify-content: center;
+}
+
+.slidecontainer {
+  display: block;
+  padding-bottom: 6%;
+  width: 100%; /* Width of the outside container */
+  text-align: center;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 25%; /* Full-width */
+  height: 15px; /* Specified height */
+  background: #fff; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+  border-radius: 10px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
+  background: black; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: black; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
