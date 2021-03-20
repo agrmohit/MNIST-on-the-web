@@ -19,7 +19,6 @@ trans = transforms.Compose([
 @app.route('/predict', methods=['POST'])
 def predict():
     body = request.get_json()
-    print(body)
     img_array = np.asarray(body['indices'])
     img_array = trans(img_array)
     img_array = img_array.view(1,1,28,28)

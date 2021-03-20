@@ -51,7 +51,7 @@ function setGridColor(color, reset) {
       if (e.target.style.backgroundColor === "black") ar[i][j] = onhover;
 
       console.log(JSON.stringify(ar));
-      fetch("http://7b307c6d1ac7.ngrok.io/predict", {
+      fetch("http://localhost:5000/predict", {
         method: "POST",
         body: JSON.stringify({ indices: ar }),
         headers: { "Content-type": "application/json; charset=UTF-8" },
